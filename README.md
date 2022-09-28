@@ -2,7 +2,7 @@
 
 Este simple aplicación es sobre los hooks de react
 
-## Notas:
+## Notas
 
 Recuerden reconstruir los módulos de node
 
