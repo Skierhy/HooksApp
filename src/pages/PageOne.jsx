@@ -9,7 +9,7 @@ export const PageOne = () => {
 				<div className="col-12 col-xl-6">
 					<CounterApp />
 				</div>
-				<hr className="d-block d-sm-block d-md-none m-2" />
+				<hr className="d-block d-xl-block d-xxl-none mt-4" />
 				<div className="col-12 col-xl-6">
 					<CounterWithCustomHook />
 				</div>
@@ -19,6 +19,7 @@ export const PageOne = () => {
 				<div className="col-12 col-xl-6">
 					<SimpleForm />
 				</div>
+				<hr className="d-block d-xl-block d-xxl-none mt-4" />
 				<div className="col-12 col-xl-6">
 					<FormWithCustomHook />
 				</div>

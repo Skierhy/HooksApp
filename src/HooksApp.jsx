@@ -5,7 +5,7 @@ import { PageOne } from './pages/PageOne';
 import { PageTwo } from './pages/PageTwo';
 
 export const HooksApp = () => {
-	const { counter, increment, decrement } = useCounter(1);
+	const { counter, increment, decrement } = useCounter(2);
 	return (
 		<>
 			<h1>HooksApp</h1>
@@ -14,15 +14,20 @@ export const HooksApp = () => {
 				{counter === 1 && (
 					<>
 						<h1>Page One</h1>
+						<hr />
+						<hr />
 						<PageOne />
 					</>
 				)}
 				{counter === 2 && (
 					<>
 						<h1>Page Two</h1>
+						<hr />
+						<hr />
 						<PageTwo />
 					</>
 				)}
+				<hr />
 				<Nav
 					increment={increment}
 					decrement={decrement}
