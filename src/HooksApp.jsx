@@ -5,7 +5,7 @@ import { PageOne } from './pages/PageOne';
 import { PageTwo } from './pages/PageTwo';
 
 export const HooksApp = () => {
-	const { counter, increment, decrement } = useCounter(2);
+	const { counter, increment, decrement } = useCounter(1);
 	return (
 		<>
 			<h1>HooksApp</h1>
