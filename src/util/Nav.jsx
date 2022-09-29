@@ -15,7 +15,7 @@ export const Nav = ({ counter, increment, decrement }) => {
 					onClick={() => {
 						increment();
 					}}
-					disabled={counter === 2 && true}>
+					disabled={counter === 3 && true}>
 					{'-->'}
 				</button>
 			</div>
