@@ -18,7 +18,7 @@ export const TodoApp = () => {
 				<small>Pendientes: ({pendingTodosCount})</small>
 			</h1>
 			<div className="row">
-				<div className="col-7">
+				<div className="col-12 col-xl-5 order-md-1 order-xl-first">
 					<TodoList
 						todos={todos}
 						onDeleteTodo={(event) => {
@@ -27,7 +27,7 @@ export const TodoApp = () => {
 						onToggleTodoApp={(event) => handleToggleTodo(event)}
 					/>
 				</div>
-				<div className="col-5">
+				<div className="col-12 col-xl-5 order-first mb-5">
 					<h4>Agregar TODO</h4>
 					<hr />
 					<TodoAdd onNewTodo={(event) => handleNewTodo(event)} />
