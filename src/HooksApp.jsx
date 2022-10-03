@@ -4,6 +4,7 @@ import { Footer } from './util/Footer';
 import { PageOne } from './pages/PageOne';
 import { PageTwo } from './pages/PageTwo';
 import { TodoApp } from './08-useReducer/TodoApp';
+import { MainApp } from './09-useContext/MainApp';
 
 export const HooksApp = () => {
 	const { counter, increment, decrement } = useCounter(1);
@@ -14,11 +15,17 @@ export const HooksApp = () => {
 			<div className="container">
 				{counter === 1 && (
 					<>
-						<TodoApp />
+						<MainApp />
 					</>
 				)}
 
 				{counter === 2 && (
+					<>
+						<TodoApp />
+					</>
+				)}
+
+				{counter === 3 && (
 					<>
 						<h1>Page One</h1>
 						<hr />
@@ -26,7 +33,7 @@ export const HooksApp = () => {
 						<PageOne />
 					</>
 				)}
-				{counter === 3 && (
+				{counter === 4 && (
 					<>
 						<h1>Page Two</h1>
 						<hr />
