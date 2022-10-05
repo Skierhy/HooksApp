@@ -3,6 +3,7 @@ export const TodoItem = ({ todo, onDeleteTodoList, onToggleTodoList }) => {
 		<>
 			<li className="list-group-item">
 				<span
+					aria-label="span"
 					className={`lead ${
 						todo.done ? 'text-decoration-line-through' : ''
 					}`}
